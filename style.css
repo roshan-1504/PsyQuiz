@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#quiz {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.question {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+label:hover {
+    background-color: #e9e9e9;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+.correct {
+    background-color: #d4edda;
+    color: #155724;
+    font-weight: bold;
+}
+
+.wrong {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-weight: bold;
+}
+
+#score {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .quiz-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #quiz {
+        grid-template-columns: 1fr;
+    }
+
+    .question p {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    #score {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        padding: 5px;
+    }
+
+    .quiz-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .question p {
+        font-size: 13px;
+    }
+
+    label {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    #score {
+        font-size: 14px;
+    }
+}
